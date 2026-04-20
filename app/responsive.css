@@ -1,0 +1,61 @@
+/* ===== MOBILE FIRST ===== */
+
+/* Sidebar collapse */
+@media (max-width: 1024px) {
+  .sidebar {
+    position: fixed !important;
+    left: -240px !important;
+    width: 220px !important;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0 !important;
+  }
+}
+
+/* Main full width */
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding: 16px !important;
+  }
+}
+
+/* Topbar responsive */
+@media (max-width: 768px) {
+  .topbar {
+    padding: 0 12px !important;
+  }
+
+  .topbar-title {
+    font-size: 13px !important;
+  }
+
+  .topbar-sub {
+    display: none !important;
+  }
+}
+
+/* Cards stack */
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Chart fix */
+@media (max-width: 768px) {
+  .chart-box {
+    height: 260px !important;
+  }
+}
+
+/* Text shrink */
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+}
